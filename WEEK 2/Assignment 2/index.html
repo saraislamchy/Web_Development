@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Sports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <section class="nav">
+                <h2 class="logotitle">Sky Sports</h2>
+                <div class="navitem">
+                    <p onclick="fetchData('')">Home</p>
+                    <p>Sports</p>
+                    <p>News</p>
+                    <p>NBA</p>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <main class="maindiv">
+        <section class="searchSection">
+            <div class="searchField">
+                <input id="searchInput" type="text" placeholder="Search players by Name">
+                <button id="submit"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+            </div>
+        </section>
+
+        <!-- loaded players  -->
+        <section class="loadedplayers">
+            <div id="playercard" class="playercard">
+            <!-- <div id="playercard" class="playercard">
+               <div class="card">
+                    <img src="https://www.thesportsdb.com/images/media/player/thumb/iea9sb1506774496.jpg" alt="">
+                    <div class="content">
+                        <h2 class="name">TJP</h2>
+                        <div class="moreinfo">
+                            <span>strNationality</span>
+                            <span>New Japan Mens</span>
+                            <span>Fighting</span>
+                        </div>
+                        <p>Theodore James Perkins (born September 3, 1984) is an American professional...</p>
+                    </div>
+                    <div class="buttongroup">
+                        <button>Add To Group</button>
+                        <button>Details</button>
+                    </div>
+                </div>  -->
+            </div>
+            <div class="selectedPlayers">
+                <div class="titlePlayerSec">
+                    <h4 class="primary-color ">Selected players list:</h4>
+                    <h3 id="counting" class="primary-color counting">0</h3>
+                </div>
+
+                <div id="selectedPlayersMain" class="selectedPlayersMain">
+                    <p class="primary-color">No player selected</p>
+                  <!-- <div class="singlePlayer">
+                        <img src="https://www.thesportsdb.com/images/media/player/thumb/ino2iw1600892848.jpg" alt="">
+                        <div class="details">
+                            <h2>Lionel Messi</h2>
+                            <p>Fighting</p>
+                        </div> -->
+                    <!-- </div>  -->
+                </div>
+            </div>
+        </section>
+
+
+        <section class="modalSection">
+            <div id="modalmain" class="modalmain">
+               <!-- <div class="modal">
+                    <img src="https://www.thesportsdb.com/images/media/player/thumb/2liyox1609251537.jpg" alt="">
+                    <div class="modalDetails">
+                        <div class="closediv">
+                            <h2 class="primary-color">Yohann Pel</h2>
+                            <i onclick="closeModal()" class="fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <div class="modalinfo">
+                            <p>Yohan Alexandre Mady Boli (born 17 November 1993) is a professional footballer who plays as a forward for Qatar Stars League side Qatar. Born in France, he represented Ivory Coast internationally. International career Boli was born in France and is Ivorian by descent. He debuted for the Ivory Coast in a 2-1 loss to Gabon for 2018 FIFA World Cup qualification on 2 September 2017. </p>
+                            <div class="otherinfo">
+                                <p><span>Natinality: </span> France</p>
+                                <p><span>Team: </span> strTeam</p>
+                                <p><span>Sport: </span> strSport</p>
+                                <p><span>Birthdate: </span> 1992-02-15</p>
+                                <p><span>Gender: </span> Male</p>
+                            </div>
+                            <div class="iconmain">
+                                <div class="icons">
+                                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  -->
+            </div>
+
+        </section>
+        <div id="modalBanner" onclick="closeModal()" class="modalBanner">
+        </div>
+    </main>
+
+
+ <footer class="footer">
+    <section>
+        <h1>Sky Sports</h1>
+        <p style="margin-top: 2px;">&copy; Copyright Sky Sports Enterprises.  2025</p>
+        <p>Inc.  All copyright reserved</p>
+
+        <section class="container">
+            <div class="grid">
+                <div class="row text-center">
+                    <div class="icon-row" style="display: flex; justify-content: center; gap: 20px; margin-top: 20px; color: #87d9ff; font-size: 30px;">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</footer>
+
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/5d73ebcce2.js" crossorigin="anonymous"></script>
+    <!-- custom js  -->
+    <script src="./setting.js"></script>
+</body>
+</html>
